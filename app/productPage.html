@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MEDIA</title>
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/shoppingCart.css">
+    <link rel="stylesheet" href="css/productPage.css">
+</head>
+<body class="body" >
+    <div class="blackout"></div>	
+    <div id="site-content">
+        <div class="menu" >
+
+            <div class="menu__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo"><a href="main.html">SHYNE TEAM</a></div>
+            <div class="card cart_icon">
+                
+                    <img src="img/card.png" class="card-icon" alt="">
+                
+            </div>
+
+            <div class="menu__links">
+                <a class="menu__links-item" href="shop.html">SHOP</a>
+                <a class="menu__links-item" href="media.html">MEDIA</a>
+                <a class="menu__links-item" href="/">CONTACT</a>
+            </div>
+
+        </div>
+
+        <div class="page_width ">
+            <img src="img/img.jpg" alt="" class="product_img">
+        </div>
+        <div class="product_info">
+            <div class="product_info_header">
+                <h1 class="header">SOUND OF MUSIC T-SHIRT (BLACK)</h1>
+                <p class="product_price">
+                    <span class="visually_hidden">Sale price</span>
+                    <span class="product_price--sale">$ 100</span>
+                    <span class="visually_hidden">Regular price</span>
+                    <span class="product_price--regular">$ 150</span>
+
+                </p>
+
+            </div>
+            <div class="grid">
+                <div class="product_order_form">
+                    <div >
+                        <label class="label_for-size" for="SIZE">SIZE</label>
+                        <select class="select_size" name="SIZE" id="SIZE">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="quantity_margin">
+                        <label class="label_for-quantity" for="QUANTITY">QUANTITY</label>
+                        <input type="number" name="QUANTITY" class="quantityInput">
+                    </div>
+                    <button class="product_form_button">
+                        <p class="button_text">Add to cart</p>     
+                    </button>
+                </div>
+                <div class="product_info_grid">
+                        <p class="info">Inside-out short sleeve cotton jersey t-shirt in black. Crewneck collar. Logo prints at front and back. Tonal stitching.</p>
+                </div>
+                    
+            </div>
+
+        </div>
+
+        <div class="product_photo_grid">
+            <div> <img src="img/img.jpg" alt="" class="product_photo_big"> </div>
+            <div> <img src="img/img.jpg" alt="" class="product_photo_big"> </div>
+        </div>
+
+    </div>
+
+
+<div id="site-footer">
+    <div class="newsletter">
+        <form action="" class="newsletterForm">
+            <label for="newsEmail" class="newsLabel">NEWSLETTER</label>
+            <div class="inputGroup">
+                    <input type="email" value="" placeholder="Email" name="[]" id="NewsletterEmail" class="inputEmail" autocorrect="off" autocapitalize="off">
+                    <div class="inputGroup__btn">
+                            <input type="submit" class="btn btnClear" value="SUBSCRIBE" name="subscribe" id="Subscribe">
+                          </div>
+            </div>
+        </form>
+    </div>
+    <div class="footerContent">
+        <div class="socialNetworks">
+            <a href=""><img src="img/vk.png" alt="" class="social"></a>        
+            <a href=""><img src="img/vk.png" alt="" class="social"></a> 
+        </div>
+        <div class="copyright">Copyright Midnight Studios. All Rights Reserved © 2019</div>
+    </div>
+</div>
+<div class="shoppingCart">
+        <div class="cart_header_flex">
+            <p class="cart_header">Shopping Cart</p>
+            <div class="icon-close"></div>
+            
+        </div>
+        <div class="cart-item">
+            <div class="item1">
+                <div class="cart_item_photo">
+                    <img src="img/img.jpg" alt="" class="cart_photo">
+                </div>
+                <div class="cart_item_info">
+                    <div class= "cart_item_title">SOUND OF MUSIC T-SHIRT (BLACK)</div>
+                    <span class="cart_item_price">$100</span>
+                </div>
+                <div class="cart_item_quantity_remove">
+                    <input type="number" class="cart_item_quantity"><br>  
+                    <button class="cart_item_remove">Remove</button>
+                </div>
+            </div>
+            <div class="item1">
+                    <div class="cart_item_photo">
+                        <img src="img/img.jpg" alt="" class="cart_photo">
+                    </div>
+                    <div class="cart_item_info">
+                        <div class= "cart_item_title">SOUND OF MUSIC T-SHIRT (BLACK)</div>
+                        <span class="cart_item_price">$100</span>
+                    </div>
+                    <div class="cart_item_quantity_remove">
+                        <input type="number" class="cart_item_quantity"><br>  
+                        <button class="cart_item_remove">Remove</button>
+                    </div>
+                </div>
+        </div>
+
+        <div class="cart_footer">
+            <div class="subtotal">
+                <h4>Subtotal</h4>
+                <span class="total_sum">$100</span>
+            </div>
+            
+        </div>
+        <button class="buy-btn">BUY</button>
+        
+
+</div>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+</html>

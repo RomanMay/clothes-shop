@@ -1,0 +1,136 @@
+#site-footer {
+	padding: 25px 0;
+    background-color: #000;
+	position: fixed;
+	z-index: -1;
+	left: 0;
+	right: 0;
+    bottom: 0;
+	height: 200px;
+	
+}
+.footerContent{
+	margin: 0 auto;
+	padding-top: 70px;
+	width: 70%;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+
+.newsletter{
+	width: 70%;
+	margin: 0 auto;
+}
+.socialNetworks{
+	
+	width: 20%;
+	height: 50px;
+
+	
+	
+}
+
+.social{
+	
+	width: 30px;
+	height: 30px;
+
+	
+}
+.newsletterForm{
+	text-align: center;
+	margin: 0 auto;
+}
+.newsLabel{
+	color: #fff;
+	font-family: 'Ropa Sans', sans-serif;
+	font-size: 2em;
+	
+	
+}
+.copyright{
+	width: 30%;
+	color: #fff;
+	font-family: 'Ropa Sans', sans-serif;
+	font-size: .8em;
+	text-align: right;
+	
+}
+
+.inputGroup{
+	position: relative;
+    display: table;
+    width: 100%;
+	border-collapse: separate;
+	margin-top: 20px;
+}
+.inputEmail{
+	padding-left: 10px;
+    margin: 0;
+    background-color: transparent;
+	border: 0;
+	font-size: 1.4rem;
+    line-height: 1.71429;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: red;
+	border-radius: 0;
+	display: table-cell;
+    margin: 0;
+	vertical-align: top;
+	display: inline-block;
+	border-bottom: 2px solid #646464;
+	border-collapse: separate;
+   
+}
+.inputGroup__btn{
+	display: table-cell;
+    margin: 0;
+	vertical-align: top;
+	border-collapse: separate;
+}
+.btn{
+	display: inline-block;
+    position: relative;
+    width: auto;
+    background-color: #fc0000;
+    border-radius: 0;
+    color: #000;
+    border: 2px solid #fc0000;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+    line-height: 2.2;
+	vertical-align: middle;
+	cursor: pointer;
+	border-collapse: separate;
+}
+input{
+	text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+}
+.btnClear{
+	position: relative;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    transition: 0.15s opacity ease-out;
+}

@@ -1,0 +1,141 @@
+.menu {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    width: 60%;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 10px;
+}
+
+.menu__icon {
+    display: none; 
+    width: 45px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu__icon span { 
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    background: #000;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .3s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+    top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+    top: 10px;
+}
+
+.menu__icon span:nth-child(4) {
+    top: 20px;
+ }
+
+.menu__links-item {
+    display: inline-block;
+    color: #000;
+    font-family: 'Ropa Sans', sans-serif;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu__links-item:hover {
+    text-decoration: underline;
+}
+.menu.menu_state_open{
+    transition: 2s ease-in-out;
+}
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+    display: block;  
+    position: fixed;
+    height: 100vh;
+    padding-top: 20%;
+
+
+  
+}
+
+.menu__icon {
+    display: inline-block;
+    z-index: 10;
+    overflow: hidden;
+}
+  
+.menu__links {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+  
+.menu__links-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #000;
+    font-size: 1.5em;
+    font-family: 'Ropa Sans', sans-serif;
+}
+.logo {
+    font-size: 2em;
+    font-family: 'Ropa Sans', sans-serif;
+    z-index: 10;
+    color: #000;
+
+}
+
+.logo a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.card-icon {
+    top: 0;
+    width: 38px;
+    height: 38px;
+}
+
+.card{
+    cursor: pointer;
+    z-index: 10;
+}

@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.shopItems{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 50px;
+    margin: 0 auto;
+    padding-top: 20%;
+    padding-bottom: 150px;
+}
+
+.product_name{
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.2em;
+    color: #000;
+    margin: 10px 0;
+}
+.visually_hidden{
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+    text-align: center;
+}
+.product_price{
+    font-family: monospace;
+    text-align: center;
+}
+.product_price--sale{
+    font-family: monospace;
+    margin-right: 10px;
+    font-size: 1.2em;
+    letter-spacing: 2.2px;
+    line-height: 1;
+    color: #f50707;
+
+}
+.product_price--regular{
+    font-family: monospace;
+    font-size: 1em;
+    color: #3c3b3b;
+
+}
+.product_image{
+    margin: 0 auto;
+
+    text-align:center;
+}
+.product_image_size{
+    width: 70%;
+    height: 50%;
+}
+.text_center{
+    text-align: center !important;
+}
+.product_image_size:hover{
+    transform: scale(1.03);
+    transition:0.5s ;
+}

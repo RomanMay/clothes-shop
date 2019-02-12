@@ -1,0 +1,167 @@
+body {
+    right: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+  
+  /* Menu */
+  
+  .shoppingCart {
+    background: #fff;
+    right: -385px; /* прячем меню */
+    height: 100vh;
+    position: fixed;
+    width: 385px;
+    margin: 0 auto;
+    top: 0;
+
+  }
+  
+  .blackout{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0; left: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 5;
+    display: none;
+  }
+
+  
+  
+.icon-close {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+   
+
+  }
+.icon-close:hover {
+    opacity: .5;
+  }
+    
+.icon-close:before, .icon-close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 25px;
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+  }
+
+.icon-close:before {
+    transform: rotate(45deg);
+  }
+
+.icon-close:after {
+    transform: rotate(-45deg);
+  }
+  
+  .icon-menu {
+    color: #000;
+    cursor: pointer;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 20px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .icon-menu img {
+    margin-right: 5px;
+  }
+
+  .cart_header_flex{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    height: 5%;
+
+  }
+  .cart_header{
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .item1{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-column-gap: 5px;
+    
+  }
+  .cart-item{
+    margin-top: 20px;
+    height: 66%;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+  }
+  .cart_photo{
+    width: 100px;
+    height: 100px;;
+  }
+  .cart_item_title{
+    font-family: 'Ropa Sans', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .cart_item_price{
+    font-family: monospace;
+    letter-spacing: 2.2px;
+  }
+  .cart_item_quantity{
+    width: 50px;
+    height: 20px;
+    border:1px solid #000;
+    margin-bottom: 20px;
+  }
+  .cart_item_remove{
+    border: medium none;
+    background-image: none; 
+    background: transparent;
+    font-family: 'Ropa Sans', sans-serif;
+    background-color: transparent;
+    color: #fc0000;
+    cursor: pointer;
+    border-bottom: 1px solid #fc0000;
+  }
+
+  .subtotal{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    
+  }
+  .cart_footer{
+    height: 20%;
+  }
+  .total_sum{
+    line-height: 3;
+    font-family: monospace;
+    font-size: 20px
+  }
+  h4{
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 20px
+  }
+  .buy-btn{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    margin-left: 25%;
+    cursor: pointer;
+  }
